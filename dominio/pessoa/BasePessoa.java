@@ -1,8 +1,11 @@
 package dominio.pessoa;
 
-import dominio.BaseIdentificador;
+import java.time.LocalDate;
 
-public abstract class BasePessoa extends BaseIdentificador{
+import dominio.BaseParametro;
+
+public abstract class BasePessoa extends BaseParametro{
+
     protected String name;
     protected String number;
     protected String email;
@@ -31,8 +34,8 @@ public abstract class BasePessoa extends BaseIdentificador{
         this.email = email;
     }
 
-    public BasePessoa(long id,String name, String number, String email) {
-        super(id);
+    public BasePessoa(long id, LocalDate includeDate, LocalDate changeDate, String name, String number, String email) {
+        super(id, includeDate, changeDate);
         this.name = name;
         this.number = number;
         this.email = email;
