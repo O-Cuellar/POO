@@ -23,10 +23,10 @@ public class Passageiro extends BasePessoa{
         this.cardNumber = cardNumber;
     }
 
-    public Passageiro(long id, LocalDate includeDate, LocalDate changeDate, String name, String number, String email) {
+    public Passageiro(long id, LocalDate includeDate, LocalDate changeDate, String name, String number, String email, String cpf, String cardNumber) {
         super(id, includeDate, changeDate, name, number, email);
         this.cpf = cpf;
-        this.cardNUmber = cardNumber;
+        this.cardNumber = cardNumber;
     }
 
 }
